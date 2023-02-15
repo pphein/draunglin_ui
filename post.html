@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Dr Aung Lin</title>
+		
+
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="g.ico">
+		<link rel="apple-touch-icon" href="touch.png">
+
+		
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" type="text/css" href="ccs/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all and (min-width: 276px)">
+	</head>
+	<body>
+		<div class="info">
+			
+		</div>
+		<div class="nav">
+			<h1><a href="index.html">Dr Aung Lin</a></h1>
+			
+			
+			<ul class="nav-item">
+				<li><a  href="index.html">Home</a></li>
+				<li><a class="active" href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<div class="menu">					
+					<a href="#" onClick="show()">Menu</a>
+				</div>					
+			</ul>
+			
+		</div>
+
+		<div id="sub">
+			<ul >
+				<li><a href="index.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="header-img1">Here is Blog</div>
+		<div id="header-img2">Here is Blog</div>
+		<div id="header-img3">Here is Blog</div>
+
+		<div class="container">
+			
+			<div class="blogs">
+				<div class="blog-item">
+					<img src="img/image1.jpg">
+					<h3>Title One</h3>
+					<p>akdf akdj ad djakd akdj ask fakdjf adkdfj a askf asddkf akddjf asdk jakdfj adkjf ;askdskd f;affj adfkasdf assdk askdfkas dfaksdjf as;dkjf askdfj asdkdfj ;as dkfjaskdjf a;sd fjkda;kdf a;sdkfj a;skdf a;dkf a;skdfj a skdfd.</p>
+					<p>akdf akdj ad djakd akdj ask fakdjf adkdfj a askf asddkf akddjf asdk jakdfj adkjf ;askdskd f;affj adfkasdf assdk askdfkas dfaksdjf as;dkjf askdfj asdkdfj ;as dkfjaskdjf a;sd fjkda;kdf a;sdkfj a;skdf a;dkf a;skdfj a skdfd.</p>
+					<p>akdf akdj ad djakd akdj ask fakdjf adkdfj a askf asddkf akddjf asdk jakdfj adkjf ;askdskd f;affj adfkasdf assdk askdfkas dfaksdjf as;dkjf askdfj asdkdfj ;as dkfjaskdjf a;sd fjkda;kdf a;sdkfj a;skdf a;dkf a;skdfj a skdfd.</p>
+					<p>akdf akdj ad djakd akdj ask fakdjf adkdfj a askf asddkf akddjf asdk jakdfj adkjf ;askdskd f;affj adfkasdf assdk askdfkas dfaksdjf as;dkjf askdfj asdkdfj ;as dkfjaskdjf a;sd fjkda;kdf a;sdkfj a;skdf a;dkf a;skdfj a skdfd.</p>
+
+					<div class="tags">
+						<h3>Tags <i>2</i></h3>
+						<p><a href="#">edu</a><a href="#">society</a></p>
+					</div>
+
+					<div class="comments">
+						<h3>Comments</h3>
+						<form>
+							<input type="text" name="comment" placeholder="Type Comment"><button>send</button><br>
+							<a href="#">reply</a>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="side">
+				
+
+				<div class="box">
+					<h3>Categories</h3>
+					<ul>
+						<li><a href="#">Education</a></li>
+						<li><a href="#">Society</a></li>
+						<li><a href="#">News</a></li>
+					</ul>
+				</div>
+				<div class="box">
+					<h3>Recent Posts</h3>
+					<ul>
+						<li><a href="#">Title One</a></li>
+						<li><a href="#">Title Two</a></li>
+						<li><a href="#">Title Three</a></li>
+					</ul>
+				</div>
+				<div class="box">
+					<h3>Tags</h3>
+					<ul>
+						<li><a href="#">Edu</a></li>
+						<li><a href="#">Religion</a></li>
+						<li><a href="#">Ethics</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> 
+
+		
+
+		<div class="footer">
+			<p>Made With Love By <a href="https://www.facebook.com/heinyann.heinyann">PPH</a></p>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script>
+			var i = 1;
+			function show(){
+				if(i == 1){
+				document.getElementById('sub').style.display = 'block';
+				i--;
+				}else{
+				document.getElementById('sub').style.display = 'none';
+				i = 1;
+				}
+
+
+			}
+
+			var j = 1;
+			
+			setInterval(bgChange, 5000);
+			function bgChange() {
+				document.getElementById('header-img' + j).style.display = 'none';
+			j++; if(j > 3) j = 1;
+			document.getElementById('header-img' + j).style.display = 'block';
+			}
+
+			$('h3').click(function (){
+			var div = $(this).parent();
+			$('ul', div).slideToggle('fast');
+			$(this).toggleClass('up');
+		});
+
+			
+			
+		</script>
+
+	</body>
+</html>

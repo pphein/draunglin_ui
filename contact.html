@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Dr Aung Lin</title>
+		
+
+		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="g.ico">
+		<link rel="apple-touch-icon" href="touch.png">
+
+		
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all and (min-width: 276px)">
+	</head>
+	<body>
+		<div class="info">
+			
+		</div>
+		<div class="nav">
+			<h1><a href="index.html">Dr Aung Lin</a></h1>
+			
+			
+			<ul class="nav-item">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a class="active"  href="contact.html">Contact</a></li>
+				<div class="menu">					
+					<a href="#" onClick="show()">Menu</a>
+				</div>					
+			</ul>
+			
+		</div>
+
+		<div id="sub">
+			<ul >
+				<li><a href="index.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div id="header-img1"></div>
+		<div id="header-img2"></div>
+		<div id="header-img3"></div>
+
+		<div class="container">
+			
+			<div class="contact">
+				<div class="address">
+					<div class="contact-info">
+						<h3>Contact Me</h3>
+						<p>Email: <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCFTNlSMNLzrNpJhHQBVhFmPXNcdwVcsjNLplBQHXjDbQtqrXsTllLWdHHxPHtZBDJFsFL">admin@draunglin.com</a></p>
+						<p>Phone: +959123456789</p>
+
+						<p>Facebook: <a href="https://www.facebook.com/profile.php?id=100008940872832">Aung Lin</a></p>
+						<p>Instagram: <a href="">@aunglin</a></p>
+						<p>Twitter: <a href="">@aunglin57</a></p>
+						
+					</div>
+				</div>
+
+				<div class="mail">
+					<div class="contact-form">
+						<h3>Get in Touch</h3>
+						<p>Your Message was sent, thank you.</p>
+						<form>
+							<label>Full Name</label><br>
+							<input type="text" name="name"><br>
+
+							<label>Email</label><br>
+							<input type="email" name="email"><br>
+
+							<label>Subject</label><br>
+							<input type="text" name="subject"><br>
+
+							<label>Message</label><br>
+							<textarea></textarea><br>
+
+							<input type="submit" name="Send" value="Send">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			
+		</div> 
+
+		
+		<div class="footer">
+			<p>Made With Love By <a href="https://www.facebook.com/heinyann.heinyann">PPH</a></p>
+		</div>
+
+		<script>
+			var i = 1;
+			function show(){
+				if(i == 1){
+				document.getElementById('sub').style.display = 'block';
+				i--;
+				}else{
+				document.getElementById('sub').style.display = 'none';
+				i = 1;
+				}
+
+
+			}
+
+			var j = 1;
+			
+			setInterval(bgChange, 5000);
+			function bgChange() {
+				document.getElementById('header-img' + j).style.display = 'none';
+			j++; if(j > 3) j = 1;
+			document.getElementById('header-img' + j).style.display = 'block';
+			}
+
+			
+			
+		</script>
+
+	</body>
+</html>
